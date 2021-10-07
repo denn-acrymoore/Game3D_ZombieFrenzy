@@ -1,10 +1,14 @@
 using System;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class ZombieBehavior : MonoBehaviour, IDamageable
 {
     public delegate void ZombieKilled();        // Ini delegate template
     public static event ZombieKilled OnEnemyKilled;
+
+    ZombieMovement agent; // Connect ke kelas movement agar set update posisi
+                                   // langsung berhenti ketika trigger death
 
     [Header("Zombie Stats")]
     [SerializeField] float zombieHealth = 3f;
@@ -12,11 +16,17 @@ public class ZombieBehavior : MonoBehaviour, IDamageable
     [Header("Animation Reference")]
     [SerializeField] Animator anim;
 
+    [Header("Zombie Sounds")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip zombieGrowl;
+
     bool isAlive = true;
 
     void Start()
     {
         anim.SetBool("IsAlive", isAlive);
+        agent = GetComponent<ZombieMovement>();
+        StartGrowlingSound();
     }
 
     public void TakeDamage(float amount)
@@ -44,6 +54,13 @@ public class ZombieBehavior : MonoBehaviour, IDamageable
             OnEnemyKilled();
         }
 
+        agent.enemyDeathStop();
         Destroy(gameObject, 2f);
+       
+    }
+
+    public void StartGrowlingSound()
+    {
+        audioSource.PlayOneShot(zombieGrowl);
     }
 }
