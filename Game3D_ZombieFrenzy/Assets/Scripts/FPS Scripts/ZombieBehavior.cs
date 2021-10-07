@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ZombieBehavior : MonoBehaviour, IDamageable
 {
-    public delegate void ZombieKilled();
+    public delegate void ZombieKilled();        // Ini delegate template
     public static event ZombieKilled OnEnemyKilled;
 
     [Header("Zombie Stats")]
@@ -13,6 +13,11 @@ public class ZombieBehavior : MonoBehaviour, IDamageable
     [SerializeField] Animator anim;
 
     bool isAlive = true;
+
+    void Start()
+    {
+        anim.SetBool("IsAlive", isAlive);
+    }
 
     public void TakeDamage(float amount)
     {
@@ -26,16 +31,19 @@ public class ZombieBehavior : MonoBehaviour, IDamageable
 
     private void TriggerDeath()
     {
+        isAlive = false;
+        anim.SetBool("IsAlive", isAlive);
         anim.SetTrigger("Dead");
     }
 
     private void DespawnAfterDeathAnim()
     {
-        Destroy(gameObject, 2f);
 
         if(OnEnemyKilled != null)
         {
             OnEnemyKilled();
         }
+
+        Destroy(gameObject, 2f);
     }
 }
