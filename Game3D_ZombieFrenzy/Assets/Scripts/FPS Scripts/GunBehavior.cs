@@ -110,12 +110,21 @@ public class GunBehavior : MonoBehaviour
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward
             , out hitInfoEnemy, range, enemiesMask))
         {
-            Debug.Log(hitInfoEnemy.transform.name);
+            //Debug.Log(hitInfoEnemy.transform.name);
 
             GameObject impactGO = Instantiate(bloodEffectPrefab, hitInfoEnemy.point
                 , Quaternion.LookRotation(hitInfoEnemy.normal));
+
             impactGO.transform.parent = hitInfoEnemy.transform;
             Destroy(impactGO, 2f);
+
+            IDamageable damagable=  hitInfoEnemy.transform.root
+                .GetComponent<ZombieBehavior>();
+
+            if (damagable != null)
+            {
+                damagable.TakeDamage(damage);
+            }
         }
     }
 }
