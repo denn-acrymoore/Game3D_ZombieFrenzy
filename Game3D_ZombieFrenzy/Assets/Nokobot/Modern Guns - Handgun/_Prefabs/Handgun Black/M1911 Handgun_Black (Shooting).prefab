@@ -93,102 +93,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!82 &1852227256
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 921090566749770278}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 25d9af43e6b69504eb74e087044a1395, type: 2}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!114 &1619505362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,8 +113,10 @@ MonoBehaviour:
   destroyTimer: 2
   shotPower: 700
   ejectPower: 300
-  audioSource: {fileID: 1852227256}
+  audioSource: {fileID: 0}
   gunFireSound: {fileID: 8300000, guid: bc2b823f5fbc2cf46840849717e3c38e, type: 3}
+  pistolClipOutSound: {fileID: 8300000, guid: 44252b32703de6748b0cde80ab1068ff, type: 3}
+  pistolClipInSound: {fileID: 8300000, guid: db0a2e88fb0fd7240bd902e86da907b8, type: 3}
 --- !u!114 &1852227257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,15 +132,15 @@ MonoBehaviour:
   damage: 1
   range: 100
   impactForce: 60
-  fireRate: 3
+  fireRate: 3.4
   maxAmmo: 7
   fpsCam: {fileID: 0}
   enemiesMask:
     serializedVersion: 2
-    m_Bits: 128
-  groundMask:
-    serializedVersion: 2
     m_Bits: 64
+  environmentMask:
+    serializedVersion: 2
+    m_Bits: 128
   bulletImpactEffectPrefab: {fileID: 100002, guid: 99c73c92ac40473459640b165473206f, type: 3}
   bloodEffectPrefab: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
   simpleShoot: {fileID: 1619505362}
