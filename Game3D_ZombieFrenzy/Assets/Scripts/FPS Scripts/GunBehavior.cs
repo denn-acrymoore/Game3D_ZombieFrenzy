@@ -1,7 +1,11 @@
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class GunBehavior : MonoBehaviour
 {
+    [Header("Ammo UI")]
+    public Text ammoDisplay;
+
     [Header("Gun Shot Properties")]
     [SerializeField] float damage = 1f;
     [SerializeField] float range = 100f;
@@ -35,6 +39,8 @@ public class GunBehavior : MonoBehaviour
 
     void Update()
     {
+        ammoDisplay.text = currentAmmo.ToString() + " / ∞"; //menampilkan current ammo pada layar
+
         // Kita gunakan GetButton() agar penerimaan input lebih responsif dan
         // gunTriggerLifted agar pemain tidak bisa menembak hanya dengan menahan tombol mouse.
         if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire 
