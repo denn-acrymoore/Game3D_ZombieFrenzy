@@ -78,6 +78,16 @@
     <Compile Include="Assets\Scripts\FPS Scripts\Target.cs" />
     <Compile Include="Assets\Health-Bar\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_New.cs" />
+    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\CheckSFXVolume.cs" />
+    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\ResetDemo.cs" />
+    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\ExtraLinks.cs" />
+    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\CheckMusicVolume.cs" />
+    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\OptionsMenu.cs" />
+    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\ThemeEditor.cs" />
+    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\ThemeUIElement.cs" />
+    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\ThemeUI.cs" />
+    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\PersistentMusicManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

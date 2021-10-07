@@ -57,6 +57,7 @@
     <Compile Include="Assets\JMO Assets\WarFX\Editor\CFX_SpawnSystemEditor.cs" />
     <Compile Include="Assets\AssetStoreOriginals\_SNAPS_PrototypingAssets\Scripts\Editor\PackageChecker\PackageChecker.cs" />
     <Compile Include="Assets\AssetStoreOriginals\_SNAPS_PrototypingAssets\About\Scripts\Editor\ReadmeEditor.cs" />
+    <Compile Include="Assets\SlimUI\Modern Menu 1\Editor\SlimUIWindow.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AssetStoreOriginals\_SNAPS_PrototypingAssets\Scripts\Editor\PackageChecker\settings\PackageImportList_ShaderGraph.txt" />
