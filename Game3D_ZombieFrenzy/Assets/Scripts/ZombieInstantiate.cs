@@ -54,10 +54,10 @@ public class ZombieInstantiate : MonoBehaviour
 
     IEnumerator EnemyDrop()
     {
-        while (enemyCount < 10)
+        while (enemyCount < 5)
         {
             SpawnNewZombies();
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(5f);
         }
     }
 }
