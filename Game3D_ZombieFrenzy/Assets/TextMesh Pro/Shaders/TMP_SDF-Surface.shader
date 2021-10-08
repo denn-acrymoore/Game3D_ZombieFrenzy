@@ -6,7 +6,7 @@ Properties {
 	_FaceUVSpeedY		("Face UV Speed Y", Range(-5, 5)) = 0.0
 	[HDR]_FaceColor		("Fill Color", Color) = (1,1,1,1)
 	_FaceDilate			("Face Dilate", Range(-1,1)) = 0
-
+		 
 	[HDR]_OutlineColor	("Outline Color", Color) = (0,0,0,1)
 	_OutlineTex			("Outline Texture", 2D) = "white" {}
 	_OutlineUVSpeedX	("Outline UV Speed X", Range(-5, 5)) = 0.0

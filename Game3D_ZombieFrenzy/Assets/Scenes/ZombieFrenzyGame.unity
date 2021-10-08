@@ -9278,6 +9278,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 5
   healthBar: {fileID: 427425344}
+  audioSource: {fileID: 1050275934}
+  playerHurtSound: {fileID: 8300000, guid: 103e383c32c0af3488853ca927926107, type: 3}
+  playerDeathSound: {fileID: 8300000, guid: bf0c85e0033b57442b2c2763e0a95f24, type: 3}
 --- !u!82 &396006686
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9383,10 +9386,40 @@ MonoBehaviour:
   m_GameObject: {fileID: 396006680}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f90a2fd875d7be4a8fb212e5dc52488, type: 3}
+  m_Script: {fileID: 11500000, guid: 811734e27ed24204ab5236bf3215390e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  footsteps: {fileID: 0}
+  slider: {fileID: 427425345}
+  gradient:
+    serializedVersion: 2
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  fill: {fileID: 1382588641}
 --- !u!1001 &396268868
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23703,10 +23736,10 @@ AudioSource:
   m_GameObject: {fileID: 1050275930}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 25d9af43e6b69504eb74e087044a1395, type: 2}
+  OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -29563,6 +29596,10 @@ PrefabInstance:
       propertyPath: fpsCam
       value: 
       objectReference: {fileID: 1050275932}
+    - target: {fileID: 1852227257, guid: 7e7f2840eb6a6294fb9d04582dbf8079, type: 3}
+      propertyPath: maxAmmo
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 1852227257, guid: 7e7f2840eb6a6294fb9d04582dbf8079, type: 3}
       propertyPath: ammoDisplay
       value: 

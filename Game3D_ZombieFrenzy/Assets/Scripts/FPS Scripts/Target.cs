@@ -5,7 +5,7 @@ public class Target : MonoBehaviour, IDamageable
     [SerializeField] private float health = 3f;
     [SerializeField] private GameObject damagedPrefab;
 
-    public void TakeDamage(float amount)
+    public void TakeDamage(float amount, Collider colliderHit)
     {
         health -= amount;
         if (health <= 0f)

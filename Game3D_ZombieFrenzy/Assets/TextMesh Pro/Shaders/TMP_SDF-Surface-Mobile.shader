@@ -9,7 +9,7 @@ Properties {
 	_FaceTex			("Fill Texture", 2D) = "white" {}
 	[HDR]_FaceColor		("Fill Color", Color) = (1,1,1,1)
 	_FaceDilate			("Face Dilate", Range(-1,1)) = 0
-
+		 
 	[HDR]_OutlineColor	("Outline Color", Color) = (0,0,0,1)
 	_OutlineTex			("Outline Texture", 2D) = "white" {}
 	_OutlineWidth		("Outline Thickness", Range(0, 1)) = 0

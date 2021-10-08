@@ -8,7 +8,7 @@ Properties {
 	_VertexOffsetX	("Vertex OffsetX", float) = 0
 	_VertexOffsetY	("Vertex OffsetY", float) = 0
 	_MaskSoftnessX	("Mask SoftnessX", float) = 0
-	_MaskSoftnessY	("Mask SoftnessY", float) = 0
+	_MaskSoftnessY	("Mask SoftnessY", float) = 0 
 
 	_ClipRect("Clip Rect", vector) = (-32767, -32767, 32767, 32767)
 	_Padding		("Padding", float) = 0

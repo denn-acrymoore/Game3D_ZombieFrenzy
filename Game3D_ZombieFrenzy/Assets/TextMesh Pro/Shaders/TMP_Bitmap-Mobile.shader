@@ -6,7 +6,7 @@ Properties {
 	_DiffusePower	("Diffuse Power", Range(1.0,4.0)) = 1.0
 
 	_VertexOffsetX("Vertex OffsetX", float) = 0
-	_VertexOffsetY("Vertex OffsetY", float) = 0
+	_VertexOffsetY("Vertex OffsetY", float) = 0 
 	_MaskSoftnessX("Mask SoftnessX", float) = 0
 	_MaskSoftnessY("Mask SoftnessY", float) = 0
 

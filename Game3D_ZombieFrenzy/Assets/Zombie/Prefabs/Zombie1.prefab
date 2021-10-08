@@ -1967,8 +1967,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zombieHealth: 3
   anim: {fileID: 7389507112651452681}
-  audioSource: {fileID: 0}
+  audioSource: {fileID: -1360978562974177260}
   zombieGrowl: {fileID: 8300000, guid: ad2738eb3f1b8b44aa075b67f3fbceb7, type: 3}
+  headTransform: {fileID: 8195457672599474506}
 --- !u!195 &-6362995757440475938
 NavMeshAgent:
   m_ObjectHideFlags: 0

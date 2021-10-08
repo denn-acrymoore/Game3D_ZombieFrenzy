@@ -112,7 +112,7 @@ public class GunBehavior : MonoBehaviour
             IDamageable target = hitInfoEnvironment.transform.GetComponent<IDamageable>();
             if (target != null)
             {
-                target.TakeDamage(damage);
+                target.TakeDamage(damage, hitInfoEnvironment.collider);
             }
 
             if (hitInfoEnvironment.rigidbody != null)
@@ -129,7 +129,7 @@ public class GunBehavior : MonoBehaviour
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward
             , out hitInfoEnemy, range, enemiesMask))
         {
-            //Debug.Log(hitInfoEnemy.transform.name);
+            Debug.Log(hitInfoEnemy.collider.transform.name);
 
             GameObject impactGO = Instantiate(bloodEffectPrefab, hitInfoEnemy.point
                 , Quaternion.LookRotation(hitInfoEnemy.normal));
@@ -142,7 +142,7 @@ public class GunBehavior : MonoBehaviour
 
             if (damagable != null)
             {
-                damagable.TakeDamage(damage);
+                damagable.TakeDamage(damage, hitInfoEnemy.collider);
             }
         }
     }

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerHealth : MonoBehaviour
+public class PlayerHealth : MonoBehaviour, IDamageable
 {
     public delegate void PlayerDeath();
     public static event PlayerDeath OnPlayerDeath;
@@ -10,6 +10,11 @@ public class PlayerHealth : MonoBehaviour
 
     public HealthBar healthBar;
 
+    [Header("Player Hurt and Death Sounds")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip playerHurtSound;
+    [SerializeField] private AudioClip playerDeathSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,24 +23,33 @@ public class PlayerHealth : MonoBehaviour
     }
 
     //Update is called once per frame
-    void Update()
+    //void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.Space))
+    //    {
+    //        TakeDamage(1);
+    //    }
+    //}
+
+    public void TakeDamage(float amount, Collider colliderHit)
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (GameManagerScript.isPlayerAlive)
         {
-            TakeDamage(1);
-        }
-    }
+            currentHealth -= (int) amount;
 
-    void TakeDamage(int dmg)
-    {
-        currentHealth -= dmg;
+            healthBar.SetHealth(currentHealth);
 
-        healthBar.SetHealth(currentHealth);
+            if (currentHealth <= 0)
+            {
+                audioSource.PlayOneShot(playerDeathSound);
 
-        if (currentHealth <= 0)
-        {
-            if (OnPlayerDeath != null)
-                OnPlayerDeath();
+                if (OnPlayerDeath != null)
+                    OnPlayerDeath();
+            }
+            else
+            {
+                audioSource.PlayOneShot(playerHurtSound);
+            }
         }
     }
 }

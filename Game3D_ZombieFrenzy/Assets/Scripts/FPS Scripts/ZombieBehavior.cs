@@ -20,25 +20,60 @@ public class ZombieBehavior : MonoBehaviour, IDamageable
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip zombieGrowl;
 
+    [Header("Zombie Body Part Reference")]
+    [SerializeField] private Transform headTransform;
+
     bool isAlive = true;
 
     void Start()
     {
         anim.SetBool("IsAlive", isAlive);
         agent = GetComponent<ZombieMovement>();
+        
         StartGrowlingSound();
     }
 
-    public void TakeDamage(float amount)
+    private void OnEnable()
     {
-        zombieHealth -= amount;
+        PlayerHealth.OnPlayerDeath += StopAgentMovement;
+    }
+
+    private void OnDisable()
+    {
+        PlayerHealth.OnPlayerDeath -= StopAgentMovement;
+    }
+
+    private void OnDestroy()
+    {
+        PlayerHealth.OnPlayerDeath -= StopAgentMovement;
+    }
+
+    void StopAgentMovement()
+    {
+        agent.enemyDeathStop();
+    }
+
+    public void TakeDamage(float amount, Collider colliderHit)
+    {
+        // Critical instant dead if headshot:
+        if (colliderHit.transform.name == headTransform.name)
+        {
+            zombieHealth = 0;
+        }
+        else
+        {
+            zombieHealth -= amount;
+        }
 
         if (zombieHealth <= 0)
         {
+            StopAgentMovement();   
+            TriggerDeath();
+            
             if (OnZombieHpZero != null)
                 OnZombieHpZero();
 
-            TriggerDeath();
+            gameObject.GetComponent<ZombieMovement>().SetZombieDeath();
         }
     }
 
@@ -57,7 +92,6 @@ public class ZombieBehavior : MonoBehaviour, IDamageable
             OnEnemyKilled();
         }
 
-        agent.enemyDeathStop();
         Destroy(gameObject, 2f);
        
     }

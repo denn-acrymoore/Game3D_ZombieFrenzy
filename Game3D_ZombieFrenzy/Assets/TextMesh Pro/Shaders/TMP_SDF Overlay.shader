@@ -1,5 +1,5 @@
 Shader "TextMeshPro/Distance Field Overlay" {
-
+	 
 Properties {
 	_FaceTex			("Face Texture", 2D) = "white" {}
 	_FaceUVSpeedX		("Face UV Speed X", Range(-5, 5)) = 0.0
