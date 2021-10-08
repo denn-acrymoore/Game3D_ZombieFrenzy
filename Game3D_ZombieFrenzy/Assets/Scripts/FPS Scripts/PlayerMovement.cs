@@ -17,6 +17,14 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (GameManagerScript.isPlayerAlive)
+        {
+            FPSMovement();
+        }
+    }
+
+    void FPSMovement()
+    {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundMinDistance
             , groundMask);
 

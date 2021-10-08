@@ -54,40 +54,41 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_DeleteAfterDelay.cs" />
+    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\OptionsMenu.cs" />
     <Compile Include="Assets\Nokobot\Modern Guns - Handgun\_Demo Assets\SimpleShoot.cs" />
+    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\ThemeEditor.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RotateCamera.cs" />
+    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\CheckSFXVolume.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_RandomDir.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Scripts\CFX_LightIntensityFade.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Scripts\WFX_LightFlicker.cs" />
+    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\ResetDemo.cs" />
     <Compile Include="Assets\Health-Bar\Scripts\HealthBar.cs" />
     <Compile Include="Assets\Scripts\ZombieInstantiate.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Spawn System\CFX_SpawnSystem.cs" />
     <Compile Include="Assets\AssetStoreOriginals\_SNAPS_PrototypingAssets\About\Scripts\Readme.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
+    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\ThemeUIElement.cs" />
     <Compile Include="Assets\Scripts\FPS Scripts\GunBehavior.cs" />
+    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\FPS Scripts\ZombieBehavior.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\PersistentMusicManager.cs" />
     <Compile Include="Assets\Scripts\FPS Scripts\MouseLook.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Scripts\WFX_BulletHoleDecal.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RandomDir.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_Demo_Translate.cs" />
+    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\ThemeUI.cs" />
     <Compile Include="Assets\Scripts\FPS Scripts\IDamageable.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_Wall.cs" />
+    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\ExtraLinks.cs" />
     <Compile Include="Assets\Scripts\FPS Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Scripts\CFX_AutoDestructShuriken.cs" />
     <Compile Include="Assets\Scripts\FPS Scripts\Target.cs" />
+    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\CheckMusicVolume.cs" />
     <Compile Include="Assets\Health-Bar\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_New.cs" />
-    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\CheckSFXVolume.cs" />
-    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\ResetDemo.cs" />
-    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\ExtraLinks.cs" />
-    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\CheckMusicVolume.cs" />
-    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\OptionsMenu.cs" />
-    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\ThemeEditor.cs" />
-    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\ThemeUIElement.cs" />
-    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\ThemeUI.cs" />
-    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\MainMenu.cs" />
-    <Compile Include="Assets\Scripts\MainMenu\PersistentMusicManager.cs" />
+    <Compile Include="Assets\Scripts\GameManagerScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

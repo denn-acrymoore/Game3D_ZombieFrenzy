@@ -24,6 +24,12 @@ public class ZombieInstantiate : MonoBehaviour
         ZombieBehavior.OnEnemyKilled += ReduceZombieAmount;
     }
 
+    private void OnDisable()
+    {
+        ZombieBehavior.OnEnemyKilled -= SpawnNewZombies;
+        ZombieBehavior.OnEnemyKilled -= ReduceZombieAmount;
+    }
+
     void SpawnNewZombies()
     {
         enemyCount += 1;

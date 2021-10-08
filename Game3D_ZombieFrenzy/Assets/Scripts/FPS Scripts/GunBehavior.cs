@@ -39,11 +39,24 @@ public class GunBehavior : MonoBehaviour
 
     void Update()
     {
-        ammoUI.SetText(currentAmmo.ToString() + " / ∞"); //menampilkan current ammo pada layar
+        UpdateHUDText();
 
+        if (GameManagerScript.isPlayerAlive)
+        {
+            GetShootAndReloadInput();
+        }
+    }
+
+    void UpdateHUDText()
+    {
+        ammoUI.SetText(currentAmmo.ToString() + " / ∞"); //menampilkan current ammo pada layar
+    }
+
+    void GetShootAndReloadInput()
+    {
         // Kita gunakan GetButton() agar penerimaan input lebih responsif dan
         // gunTriggerLifted agar pemain tidak bisa menembak hanya dengan menahan tombol mouse.
-        if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire 
+        if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire
             && gunTriggerLifted && !isReloading)
         {
             gunTriggerLifted = false;
@@ -61,7 +74,7 @@ public class GunBehavior : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.R) && !isReloading 
+        if (Input.GetKeyDown(KeyCode.R) && !isReloading
             && currentAmmo != maxAmmo)
         {
             isReloading = true;

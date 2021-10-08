@@ -1,10 +1,10 @@
-using System;
 using UnityEngine;
 
 public class ZombieBehavior : MonoBehaviour, IDamageable
 {
     public delegate void ZombieKilled();        // Ini delegate template
     public static event ZombieKilled OnEnemyKilled;
+    public static event ZombieKilled OnZombieHpZero;
 
     [Header("Zombie Stats")]
     [SerializeField] float zombieHealth = 3f;
@@ -25,6 +25,9 @@ public class ZombieBehavior : MonoBehaviour, IDamageable
 
         if (zombieHealth <= 0)
         {
+            if (OnZombieHpZero != null)
+                OnZombieHpZero();
+
             TriggerDeath();
         }
     }

@@ -3,8 +3,8 @@ using UnityEngine;
 public class MouseLook : MonoBehaviour
 {
     [Header("Mouse Settings")]
-    [SerializeField] float mouseSensitivityX = 400f;
-    [SerializeField] float mouseSensitivityY = 200f;
+    [SerializeField] float mouseSensitivityX = 250f;
+    [SerializeField] float mouseSensitivityY = 250f;
 
     [Header("References")]
     [SerializeField] Transform playerBody;
@@ -19,6 +19,14 @@ public class MouseLook : MonoBehaviour
 
     void Update()
     {
+        if (GameManagerScript.isPlayerAlive)
+        {
+            RotateFPSCamera();
+        }
+    }
+
+    void RotateFPSCamera()
+    {
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivityX * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivityY * Time.deltaTime;
 
@@ -26,7 +34,7 @@ public class MouseLook : MonoBehaviour
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
         camera.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-        
+
         playerBody.Rotate(Vector3.up * mouseX);
     }
 }

@@ -1,11 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int maxHealth = 100;
-    public int currentHealth;
+    public delegate void PlayerDeath();
+    public static event PlayerDeath OnPlayerDeath;
+
+    public int maxHealth = 5;
+    private int currentHealth;
 
     public HealthBar healthBar;
 
@@ -16,12 +17,12 @@ public class PlayerHealth : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
     }
 
-    // Update is called once per frame
+    //Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            TakeDamage(20);
+            TakeDamage(1);
         }
     }
 
@@ -30,5 +31,11 @@ public class PlayerHealth : MonoBehaviour
         currentHealth -= dmg;
 
         healthBar.SetHealth(currentHealth);
+
+        if (currentHealth <= 0)
+        {
+            if (OnPlayerDeath != null)
+                OnPlayerDeath();
+        }
     }
 }
