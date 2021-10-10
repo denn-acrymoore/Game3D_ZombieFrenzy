@@ -9,6 +9,7 @@ ScriptsOnlyBuild:
     - PersistentMusicManager
     - PlayerHealth
     - PlayerMovement
+    - Readme
     - SimpleShoot
     - SlimUI.ModernMenu.CheckMusicVolume
     - SlimUI.ModernMenu.ExtraLinks
@@ -152,9 +153,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5100}
     - Class: 114
-      Script: {instanceID: 36058}
+      Script: {instanceID: 24582}
     - Class: 114
-      Script: {instanceID: 36074}
+      Script: {instanceID: 24598}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128

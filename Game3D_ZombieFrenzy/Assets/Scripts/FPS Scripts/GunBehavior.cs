@@ -137,12 +137,12 @@ public class GunBehavior : MonoBehaviour
             impactGO.transform.parent = hitInfoEnemy.transform;
             Destroy(impactGO, 2f);
 
-            IDamageable damagable=  hitInfoEnemy.transform.root
+            IDamageable damageable=  hitInfoEnemy.transform.root
                 .GetComponent<ZombieBehavior>();
 
-            if (damagable != null)
+            if (damageable != null)
             {
-                damagable.TakeDamage(damage, hitInfoEnemy.collider);
+                damageable.TakeDamage(damage, hitInfoEnemy.collider);
             }
         }
     }
