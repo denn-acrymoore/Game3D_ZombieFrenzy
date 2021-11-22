@@ -109,7 +109,7 @@ namespace SlimUI.ModernMenu
 
 		public void StartMainGame()
         {
-			SceneManager.LoadScene("ZombieFrenzyGame");
+			SceneManager.LoadScene("Level01");
         }
 
 		public void OpenMenu(int menuIndex)
