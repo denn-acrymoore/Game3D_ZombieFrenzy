@@ -30,9 +30,15 @@ public class ZombieMovement : MonoBehaviour
         agent.SetDestination(target.position); //set si zombie lari ke arah target
         anim.SetBool("IsRunning", true);
 
-        float distance = Vector3.Distance(transform.position, target.position);
+        Vector3 currZombiePosition = transform.position;
+        currZombiePosition.y = 0;
 
-        if(distance < 2 && !isAttacking)
+        Vector3 currPlayerPosition = target.position;
+        currPlayerPosition.y = 0;
+
+        float distance = Vector3.Distance(currZombiePosition, currPlayerPosition);
+
+        if(distance < 1.5f && !isAttacking)
         {
             isAttacking = true;
             anim.SetTrigger("Attacking");

@@ -66,6 +66,7 @@ public class GameManagerScript : MonoBehaviour
 
     public void GoToGameSceneAgain()
     {
-        SceneManager.LoadScene("ZombieFrenzyGame");
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
     }
 }
