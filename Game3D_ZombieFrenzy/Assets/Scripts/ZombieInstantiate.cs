@@ -15,8 +15,6 @@ public class ZombieInstantiate : MonoBehaviour
     void Start()
     {
         SpawnNewZombies();
-        SpawnNewZombies();
-        SpawnNewZombies();
 
         StartCoroutine(EnemyDrop());
     }
