@@ -68,4 +68,10 @@ public class GameManagerScript : MonoBehaviour
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
     }
+
+    public void GoToNextLevel()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.buildIndex + 1);
+    }
 }
