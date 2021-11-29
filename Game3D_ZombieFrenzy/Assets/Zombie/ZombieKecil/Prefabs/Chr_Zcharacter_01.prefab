@@ -70,7 +70,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2950834360042995004}
-  - component: {fileID: 376931351256832974}
   m_Layer: 6
   m_Name: Base HumanRArmPalm
   m_TagString: Untagged
@@ -97,19 +96,6 @@ Transform:
   m_Father: {fileID: 2199581148479934277}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &376931351256832974
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 660398656693564307}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.21171387, y: 0.07772014, z: 0.13531686}
-  m_Center: {x: -0.11229042, y: -0.01504836, z: -0.008208146}
 --- !u!1 &688674971060880126
 GameObject:
   m_ObjectHideFlags: 0
@@ -150,7 +136,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4093201988903180420}
-  - component: {fileID: 1766591870611889591}
   m_Layer: 6
   m_Name: Base HumanNeck
   m_TagString: Untagged
@@ -173,20 +158,6 @@ Transform:
   m_Father: {fileID: 7795955142125323092}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &1766591870611889591
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 812813184418584530}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.06323857
-  m_Height: 0.29024827
-  m_Direction: 0
-  m_Center: {x: -0.08163075, y: 0.017938396, z: -0.0032944353}
 --- !u!1 &965362740938150240
 GameObject:
   m_ObjectHideFlags: 0
@@ -380,7 +351,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4456992951404525818}
-  - component: {fileID: 4024246478064536711}
   m_Layer: 6
   m_Name: Base HumanRArmUpperarm
   m_TagString: Untagged
@@ -403,20 +373,6 @@ Transform:
   m_Father: {fileID: 2824090004114860811}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &4024246478064536711
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1783897976481130988}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.048704166
-  m_Height: 0.40083832
-  m_Direction: 0
-  m_Center: {x: -0.13214792, y: 0.018344564, z: -0.0062207053}
 --- !u!1 &1818544123604456613
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,7 +382,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8530916159648320466}
-  - component: {fileID: 1664203032900494829}
   m_Layer: 6
   m_Name: Base HumanHead
   m_TagString: Untagged
@@ -453,20 +408,6 @@ Transform:
   m_Father: {fileID: 4093201988903180420}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &1664203032900494829
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1818544123604456613}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.10083692
-  m_Height: 0.24952948
-  m_Direction: 0
-  m_Center: {x: -0.047255695, y: 0.035109706, z: 8.9728286e-10}
 --- !u!1 &1895032037030218703
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,7 +417,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 667151868495392078}
-  - component: {fileID: 781922140342396204}
   m_Layer: 6
   m_Name: Base HumanRCalf
   m_TagString: Untagged
@@ -499,20 +439,6 @@ Transform:
   m_Father: {fileID: 2931512851105243591}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &781922140342396204
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1895032037030218703}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.03998424
-  m_Height: 0.21476136
-  m_Direction: 0
-  m_Center: {x: 0.099044025, y: -0.037685085, z: -0.034261502}
 --- !u!1 &2111251754157996397
 GameObject:
   m_ObjectHideFlags: 0
@@ -522,7 +448,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3230263651932770858}
-  - component: {fileID: 4042500218649478264}
   m_Layer: 6
   m_Name: Base HumanLArmPalm
   m_TagString: Untagged
@@ -549,19 +474,6 @@ Transform:
   m_Father: {fileID: 8811532544505032796}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -118.757, y: 67.487, z: -48.916992}
---- !u!65 &4042500218649478264
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2111251754157996397}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.21171387, y: 0.07772014, z: 0.13531686}
-  m_Center: {x: -0.11229042, y: -0.01504836, z: -0.13}
 --- !u!1 &2259908533772207243
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,7 +514,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3429369622076454683}
-  - component: {fileID: 2714070539269004286}
   m_Layer: 6
   m_Name: Base HumanRFoot
   m_TagString: Untagged
@@ -625,19 +536,6 @@ Transform:
   m_Father: {fileID: 667151868495392078}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &2714070539269004286
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2440242478395912050}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.044901796
-  m_Center: {x: 0.033203192, y: 0.41150177, z: -0.11384758}
 --- !u!1 &2592480439607979672
 GameObject:
   m_ObjectHideFlags: 0
@@ -678,7 +576,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8811532544505032796}
-  - component: {fileID: 8795538864621593550}
   m_Layer: 6
   m_Name: Base HumanLArmForearm
   m_TagString: Untagged
@@ -701,20 +598,6 @@ Transform:
   m_Father: {fileID: 7935093399115548438}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -0.158, y: -5.769, z: -33.638}
---- !u!136 &8795538864621593550
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2789635053576640890}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.05045168
-  m_Height: 0.20220931
-  m_Direction: 0
-  m_Center: {x: -0.038552977, y: -0.005500462, z: -0.0038634052}
 --- !u!1 &2792108954677015506
 GameObject:
   m_ObjectHideFlags: 0
@@ -785,7 +668,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7935093399115548438}
-  - component: {fileID: 8175097312441536773}
   m_Layer: 6
   m_Name: Base HumanLArmUpperarm
   m_TagString: Untagged
@@ -808,20 +690,6 @@ Transform:
   m_Father: {fileID: 4576105573185944385}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &8175097312441536773
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2911882584379330228}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.05366597
-  m_Height: 0.33631936
-  m_Direction: 0
-  m_Center: {x: -0.16116475, y: 0.018813876, z: -0.031733025}
 --- !u!1 &3020608197132687630
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,7 +760,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5364218799647816024}
-  - component: {fileID: 3011379883473636877}
   m_Layer: 6
   m_Name: Base HumanLLegCalf
   m_TagString: Untagged
@@ -915,20 +782,6 @@ Transform:
   m_Father: {fileID: 6733292798252658252}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &3011379883473636877
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3087835613296984312}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.042629402
-  m_Height: 0.22391629
-  m_Direction: 0
-  m_Center: {x: 0.09446668, y: -0.039272454, z: 0.015717125}
 --- !u!1 &3176561007275134814
 GameObject:
   m_ObjectHideFlags: 0
@@ -1028,8 +881,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7843871789876836611}
-  - component: {fileID: 2633683565348824541}
-  - component: {fileID: 520158932589314255}
   m_Layer: 6
   m_Name: Base HumanSpine2
   m_TagString: Untagged
@@ -1052,34 +903,6 @@ Transform:
   m_Father: {fileID: 1506513962933082058}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &2633683565348824541
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3846146027741893910}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.15548429
-  m_Height: 0.3855212
-  m_Direction: 2
-  m_Center: {x: -0.2159736, y: -0.02639412, z: 0.0021292884}
---- !u!136 &520158932589314255
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3846146027741893910}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 0.15548429
-  m_Height: 0.37300903
-  m_Direction: 0
-  m_Center: {x: -0.20971763, y: -0.02639409, z: 0.0021292886}
 --- !u!1 &3908709483834049706
 GameObject:
   m_ObjectHideFlags: 0
@@ -1643,6 +1466,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5091242709008406460}
+  - component: {fileID: 8504738004948854020}
   m_Layer: 0
   m_Name: Bone_ R Thigh
   m_TagString: Untagged
@@ -1665,6 +1489,20 @@ Transform:
   m_Father: {fileID: 5091242709008406504}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &8504738004948854020
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5091242709008108124}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.091165274
+  m_Height: 0.38544476
+  m_Direction: 0
+  m_Center: {x: -0.0907021, y: -0.0011246911, z: -0.0030322152}
 --- !u!1 &5091242709008108126
 GameObject:
   m_ObjectHideFlags: 0
@@ -1801,6 +1639,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5091242709008406502}
+  - component: {fileID: 8675558554493836580}
   m_Layer: 0
   m_Name: Bone_ R Calf
   m_TagString: Untagged
@@ -1823,6 +1662,20 @@ Transform:
   m_Father: {fileID: 5091242709008406460}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &8675558554493836580
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5091242709008108422}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.07155439
+  m_Height: 0.31681904
+  m_Direction: 0
+  m_Center: {x: -0.13207367, y: 0.0033427954, z: -0.00013338975}
 --- !u!1 &5091242709008108424
 GameObject:
   m_ObjectHideFlags: 0
@@ -1865,6 +1718,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5091242709008406506}
+  - component: {fileID: 6916741387206559015}
   m_Layer: 0
   m_Name: Bone_ Neck
   m_TagString: Untagged
@@ -1887,6 +1741,20 @@ Transform:
   m_Father: {fileID: 5091242709008406448}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &6916741387206559015
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5091242709008108426}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.07952698
+  m_Height: 0.26902908
+  m_Direction: 0
+  m_Center: {x: -0.06543477, y: 0.015609904, z: 0.000860759}
 --- !u!1 &5091242709008108428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1957,6 +1825,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5091242709008406512}
+  - component: {fileID: 7883077039219052282}
   m_Layer: 0
   m_Name: Bone_ L Thigh
   m_TagString: Untagged
@@ -1979,6 +1848,20 @@ Transform:
   m_Father: {fileID: 5091242709008406504}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &7883077039219052282
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5091242709008108432}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.091165274
+  m_Height: 0.38544476
+  m_Direction: 0
+  m_Center: {x: -0.0907021, y: -0.0011246911, z: -0.0030322152}
 --- !u!1 &5091242709008108434
 GameObject:
   m_ObjectHideFlags: 0
@@ -2053,6 +1936,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5091242709008406518}
+  - component: {fileID: 2081980893926536367}
+  - component: {fileID: 6277012992688089427}
   m_Layer: 0
   m_Name: Bone_ L Foot
   m_TagString: Untagged
@@ -2075,6 +1960,32 @@ Transform:
   m_Father: {fileID: 5091242709008406490}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &2081980893926536367
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5091242709008108438}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.06919957
+  m_Center: {x: -0.03031907, y: 0.012704237, z: 0.00000013093799}
+--- !u!65 &6277012992688089427
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5091242709008108438}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07153777, y: 0.23892538, z: 0.10983539}
+  m_Center: {x: -0.050327525, y: 0.0721979, z: -0.0082378965}
 --- !u!1 &5091242709008108440
 GameObject:
   m_ObjectHideFlags: 0
@@ -2238,6 +2149,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5091242709008406402}
+  - component: {fileID: 991422261052714098}
+  - component: {fileID: 8823095793264509303}
   m_Layer: 0
   m_Name: Bone_ R Foot
   m_TagString: Untagged
@@ -2260,6 +2173,32 @@ Transform:
   m_Father: {fileID: 5091242709008406502}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &991422261052714098
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5091242709008108450}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.06919957
+  m_Center: {x: -0.03031907, y: 0.012704237, z: 0.00000013093799}
+--- !u!65 &8823095793264509303
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5091242709008108450}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07153777, y: 0.23892538, z: 0.10983539}
+  m_Center: {x: -0.050327525, y: 0.0721979, z: -0.0082378965}
 --- !u!1 &5091242709008108452
 GameObject:
   m_ObjectHideFlags: 0
@@ -3099,6 +3038,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5091242709008406490}
+  - component: {fileID: 1719097329645743641}
   m_Layer: 0
   m_Name: Bone_ L Calf
   m_TagString: Untagged
@@ -3121,6 +3061,20 @@ Transform:
   m_Father: {fileID: 5091242709008406512}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &1719097329645743641
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5091242709008108538}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.07155439
+  m_Height: 0.31681904
+  m_Direction: 0
+  m_Center: {x: -0.13207367, y: 0.0033427954, z: -0.00013338975}
 --- !u!1 &5091242709008108540
 GameObject:
   m_ObjectHideFlags: 0
@@ -3160,6 +3114,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5091242709008406494}
+  - component: {fileID: 3024339675289656334}
   m_Layer: 0
   m_Name: Bone_ Head
   m_TagString: Untagged
@@ -3182,6 +3137,20 @@ Transform:
   m_Father: {fileID: 5091242709008406506}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &3024339675289656334
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5091242709008108542}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.20871274
+  m_Height: 0.4366268
+  m_Direction: 0
+  m_Center: {x: -0.19417365, y: -0.001961027, z: 0.0014193354}
 --- !u!1 &5141841566966664046
 GameObject:
   m_ObjectHideFlags: 0
@@ -3222,7 +3191,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3518748789949017872}
-  - component: {fileID: 3402122189985982786}
   m_Layer: 6
   m_Name: Base HumanLLegFoot
   m_TagString: Untagged
@@ -3245,19 +3213,6 @@ Transform:
   m_Father: {fileID: 5364218799647816024}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &3402122189985982786
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5208195578444556833}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.0515158
-  m_Center: {x: 0.027578767, y: 0.418307, z: 0.099291615}
 --- !u!1 &5285097518310818424
 GameObject:
   m_ObjectHideFlags: 0
@@ -3267,7 +3222,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2931512851105243591}
-  - component: {fileID: 778498302129160183}
   m_Layer: 6
   m_Name: Base HumanRThigh
   m_TagString: Untagged
@@ -3290,20 +3244,6 @@ Transform:
   m_Father: {fileID: 8203677566887956459}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &778498302129160183
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5285097518310818424}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.059647735
-  m_Height: 0.3285421
-  m_Direction: 0
-  m_Center: {x: -0.020694477, y: -0.008601207, z: -0.016512737}
 --- !u!1 &5292252022292866944
 GameObject:
   m_ObjectHideFlags: 0
@@ -3560,7 +3500,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2199581148479934277}
-  - component: {fileID: 710973517249263538}
   m_Layer: 6
   m_Name: Base HumanRArmForearm
   m_TagString: Untagged
@@ -3583,20 +3522,6 @@ Transform:
   m_Father: {fileID: 4456992951404525818}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &710973517249263538
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6613668998915063362}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.05045168
-  m_Height: 0.33740333
-  m_Direction: 0
-  m_Center: {x: -0.14368235, y: -0.0055005183, z: -0.0038631447}
 --- !u!1 &7238066263462505252
 GameObject:
   m_ObjectHideFlags: 0
@@ -3606,14 +3531,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8203677566887956459}
-  - component: {fileID: 5189655103007009598}
-  - component: {fileID: 1059596837807715334}
-  - component: {fileID: 4823063106295788598}
-  - component: {fileID: 1836651692659142410}
-  - component: {fileID: 3699994430171118099}
-  - component: {fileID: 5803898605137547234}
-  - component: {fileID: 8509637703629969338}
-  - component: {fileID: 3057439683740284802}
   m_Layer: 6
   m_Name: Base HumanPelvis
   m_TagString: Untagged
@@ -3638,113 +3555,6 @@ Transform:
   m_Father: {fileID: 5091242709008406442}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &5189655103007009598
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7238066263462505252}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.11569526
-  m_Height: 0.40642437
-  m_Direction: 0
-  m_Center: {x: -0.23454551, y: 0.042057306, z: -0.01719955}
---- !u!136 &1059596837807715334
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7238066263462505252}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.10949898
-  m_Height: 0.40472436
-  m_Direction: 0
-  m_Center: {x: -0.23539169, y: 0.051612303, z: 0.0000000043479482}
---- !u!136 &4823063106295788598
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7238066263462505252}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.10234501
-  m_Height: 0.40148136
-  m_Direction: 0
-  m_Center: {x: -0.23701453, y: 0.057632465, z: 0.040462095}
---- !u!65 &1836651692659142410
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7238066263462505252}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.14657801, y: 0.1771484, z: 0.27093232}
-  m_Center: {x: -0.069458894, y: 0.046811167, z: 0.0076146037}
---- !u!65 &3699994430171118099
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7238066263462505252}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.4747947, y: 0.10304506, z: 0.068772435}
-  m_Center: {x: 0.14521532, y: 0.021485051, z: 0.11454523}
---- !u!65 &5803898605137547234
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7238066263462505252}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.048945118, y: 0.14943172, z: 0.053800702}
-  m_Center: {x: 0.40429932, y: 0.06579031, z: 0.13769983}
---- !u!65 &8509637703629969338
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7238066263462505252}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.4747947, y: 0.10304506, z: 0.07339537}
-  m_Center: {x: 0.14521568, y: 0.021485053, z: -0.09694395}
---- !u!65 &3057439683740284802
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7238066263462505252}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.048945118, y: 0.1494317, z: 0.06756461}
-  m_Center: {x: 0.4043032, y: 0.06579031, z: -0.11172648}
 --- !u!1 &7415925515250952195
 GameObject:
   m_ObjectHideFlags: 0
@@ -3876,7 +3686,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6733292798252658252}
-  - component: {fileID: 2321518404978904062}
   m_Layer: 6
   m_Name: Base HumanLLegThigh
   m_TagString: Untagged
@@ -3899,20 +3708,6 @@ Transform:
   m_Father: {fileID: 8203677566887956459}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &2321518404978904062
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8597088338666952784}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.06622653
-  m_Height: 0.33437613
-  m_Direction: 0
-  m_Center: {x: -0.023611495, y: 0.011388499, z: 0.004290061}
 --- !u!1 &8747010680480000968
 GameObject:
   m_ObjectHideFlags: 0
