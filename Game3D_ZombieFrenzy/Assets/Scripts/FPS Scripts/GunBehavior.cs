@@ -27,10 +27,10 @@ public class GunBehavior : MonoBehaviour
     [Header("References")]
     [SerializeField] SimpleShoot simpleShoot;
 
-    float nextTimeToFire = 0f;
-    bool gunTriggerLifted = true;
-    bool isReloading = false;
-    int currentAmmo;
+    private bool gunTriggerLifted = true;
+    private bool isReloading = false;
+    private int currentAmmo;
+    private bool gunReadyToFire = true;
 
     private void Start()
     {
@@ -56,14 +56,14 @@ public class GunBehavior : MonoBehaviour
     {
         // Kita gunakan GetButton() agar penerimaan input lebih responsif dan
         // gunTriggerLifted agar pemain tidak bisa menembak hanya dengan menahan tombol mouse.
-        if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire
+        if (Input.GetButton("Fire1") && gunReadyToFire
             && gunTriggerLifted && !isReloading)
         {
             gunTriggerLifted = false;
-            nextTimeToFire = Time.time + 1f / fireRate;
 
             if (currentAmmo > 0)
             {
+                gunReadyToFire = false;
                 simpleShoot.StartShootAnim();
                 ShootBehavior();
             }
@@ -85,6 +85,11 @@ public class GunBehavior : MonoBehaviour
         {
             gunTriggerLifted = true;
         }
+    }
+
+    public void GunShootAnimFinished()
+    {
+        gunReadyToFire = true;
     }
 
     public void FinishedReloadingBehavior()
