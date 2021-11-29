@@ -54,7 +54,7 @@ public class ZombieMovement : MonoBehaviour
 
     void AttackPlayer()
     {
-        if (GameManagerScript.isPlayerAlive && isAlive)
+        if (GameManagerScript.isPlayerAlive && isAlive && !GameManagerScript.isPlayerWin)
         {
             Debug.Log("Attacked the player");
             IDamageable damageable = target.gameObject.GetComponent<PlayerHealth>();

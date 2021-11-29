@@ -23,11 +23,9 @@ public class ZombieBehavior : MonoBehaviour, IDamageable
     [Header("Zombie Body Part Reference")]
     [SerializeField] private Transform headTransform;
 
-    bool isAlive = true;
-
     void Start()
     {
-        anim.SetBool("IsAlive", isAlive);
+        anim.SetBool("IsAlive", true);
         agent = GetComponent<ZombieMovement>();
         
         StartGrowlingSound();
@@ -36,16 +34,22 @@ public class ZombieBehavior : MonoBehaviour, IDamageable
     private void OnEnable()
     {
         PlayerHealth.OnPlayerDeath += StopAgentMovement;
+        GameManagerScript.OnPlayerWin += StopAgentMovement;
+        GameManagerScript.OnPlayerWin += TriggerDeath;
     }
 
     private void OnDisable()
     {
         PlayerHealth.OnPlayerDeath -= StopAgentMovement;
+        GameManagerScript.OnPlayerWin -= StopAgentMovement;
+        GameManagerScript.OnPlayerWin -= TriggerDeath;
     }
 
     private void OnDestroy()
     {
         PlayerHealth.OnPlayerDeath -= StopAgentMovement;
+        GameManagerScript.OnPlayerWin -= StopAgentMovement;
+        GameManagerScript.OnPlayerWin -= TriggerDeath;
     }
 
     void StopAgentMovement()
@@ -72,16 +76,14 @@ public class ZombieBehavior : MonoBehaviour, IDamageable
             
             if (OnZombieHpZero != null)
                 OnZombieHpZero();
-
-            gameObject.GetComponent<ZombieMovement>().SetZombieDeath();
         }
     }
 
     private void TriggerDeath()
     {
-        isAlive = false;
-        anim.SetBool("IsAlive", isAlive);
+        anim.SetBool("IsAlive", false);
         anim.SetTrigger("Dead");
+        gameObject.GetComponent<ZombieMovement>().SetZombieDeath();
     }
 
     private void DespawnAfterDeathAnim()

@@ -41,7 +41,7 @@ public class GunBehavior : MonoBehaviour
     {
         UpdateHUDText();
 
-        if (GameManagerScript.isPlayerAlive)
+        if (GameManagerScript.isPlayerAlive && !GameManagerScript.isPlayerWin)
         {
             GetShootAndReloadInput();
         }

@@ -19,7 +19,7 @@ public class MouseLook : MonoBehaviour
 
     void Update()
     {
-        if (GameManagerScript.isPlayerAlive)
+        if (GameManagerScript.isPlayerAlive && !GameManagerScript.isPlayerWin)
         {
             RotateFPSCamera();
         }

@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if (GameManagerScript.isPlayerAlive)
+        if (GameManagerScript.isPlayerAlive && !GameManagerScript.isPlayerWin)
         {
             FPSMovement();
         }

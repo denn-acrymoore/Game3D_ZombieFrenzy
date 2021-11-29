@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ZombieInstantiate : MonoBehaviour
 {
-    public int enemyCount;
+    [SerializeField] private int maxZombiePresentInLevel = 7;
+    private int enemyCount = 0;
     public Transform[] spawnPoints;
     public GameObject zombiesPrefab;
     
@@ -14,19 +15,19 @@ public class ZombieInstantiate : MonoBehaviour
     void Start()
     {
         SpawnNewZombies();
+        SpawnNewZombies();
+        SpawnNewZombies();
 
         StartCoroutine(EnemyDrop());
     }
 
     private void OnEnable()
     {
-        ZombieBehavior.OnEnemyKilled += SpawnNewZombies;
         ZombieBehavior.OnEnemyKilled += ReduceZombieAmount;
     }
 
     private void OnDisable()
     {
-        ZombieBehavior.OnEnemyKilled -= SpawnNewZombies;
         ZombieBehavior.OnEnemyKilled -= ReduceZombieAmount;
     }
 
@@ -54,10 +55,18 @@ public class ZombieInstantiate : MonoBehaviour
 
     IEnumerator EnemyDrop()
     {
-        while (enemyCount < 5)
+        while (GameManagerScript.isPlayerAlive 
+            && !GameManagerScript.isPlayerWin)
         {
-            SpawnNewZombies();
-            yield return new WaitForSeconds(5f);
+            if (enemyCount < maxZombiePresentInLevel)
+            {
+                SpawnNewZombies();
+                yield return new WaitForSeconds(2f);
+            }
+            else
+            {
+                yield return null;
+            }
         }
     }
 }

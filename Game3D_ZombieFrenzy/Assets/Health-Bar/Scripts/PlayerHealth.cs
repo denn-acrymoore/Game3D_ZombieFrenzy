@@ -15,25 +15,15 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     [SerializeField] private AudioClip playerHurtSound;
     [SerializeField] private AudioClip playerDeathSound;
 
-    // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
     }
 
-    //Update is called once per frame
-    //void Update()
-    //{
-    //    if (Input.GetKeyDown(KeyCode.Space))
-    //    {
-    //        TakeDamage(1);
-    //    }
-    //}
-
     public void TakeDamage(float amount, Collider colliderHit)
     {
-        if (GameManagerScript.isPlayerAlive)
+        if (GameManagerScript.isPlayerAlive && !GameManagerScript.isPlayerWin)
         {
             currentHealth -= (int) amount;
 
