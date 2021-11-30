@@ -1623,7 +1623,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5091242709008406462}
-  - component: {fileID: 7210202446144718431}
+  - component: {fileID: 7770074653327880521}
   m_Layer: 0
   m_Name: Bone_ R Hand
   m_TagString: Untagged
@@ -1649,7 +1649,7 @@ Transform:
   m_Father: {fileID: 5091242709008406400}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &7210202446144718431
+--- !u!65 &7770074653327880521
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1660,8 +1660,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.2574883, y: 0.116006576, z: 0.25175667}
-  m_Center: {x: -0.11088033, y: 0.003160685, z: 0.029255586}
+  m_Size: {x: 0.27746448, y: 0.07569785, z: 0.1726838}
+  m_Center: {x: -0.115344, y: 0.0031609735, z: 0.0078064515}
 --- !u!1 &5091242709008108416
 GameObject:
   m_ObjectHideFlags: 0
@@ -2063,8 +2063,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.27746445, y: 0.116006576, z: 0.25356174}
-  m_Center: {x: -0.11534398, y: 0.0031610285, z: -0.032632675}
+  m_Size: {x: 0.27746448, y: 0.07569785, z: 0.1726838}
+  m_Center: {x: -0.115344, y: 0.0031609735, z: 0.0078064515}
 --- !u!1 &5091242709008108436
 GameObject:
   m_ObjectHideFlags: 0
