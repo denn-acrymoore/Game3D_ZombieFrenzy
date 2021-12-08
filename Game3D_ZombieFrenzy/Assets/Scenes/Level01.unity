@@ -51471,14 +51471,6 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 427425344}
-    - target: {fileID: 8582348473193934835, guid: b0fdbca7ad0557e499a79db2e115fdcf, type: 3}
-      propertyPath: fill
-      value: 
-      objectReference: {fileID: 1382588641}
-    - target: {fileID: 8582348473193934835, guid: b0fdbca7ad0557e499a79db2e115fdcf, type: 3}
-      propertyPath: slider
-      value: 
-      objectReference: {fileID: 427425345}
     - target: {fileID: 8582348473193934836, guid: b0fdbca7ad0557e499a79db2e115fdcf, type: 3}
       propertyPath: m_Name
       value: Player
