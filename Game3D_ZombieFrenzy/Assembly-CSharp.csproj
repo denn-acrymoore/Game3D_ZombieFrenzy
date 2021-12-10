@@ -75,7 +75,7 @@
     <Compile Include="Assets\Scripts\FPS Scripts\MouseLook.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Scripts\WFX_BulletHoleDecal.cs" />
     <Compile Include="Assets\Scripts\GameManagerScript.cs" />
-    <Compile Include="Assets\Scripts\ZombieMovement.cs" />
+    <Compile Include="Assets\Scripts\FPS Scripts\ZombieMovement.cs" />
     <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\ThemeUI.cs" />
     <Compile Include="Assets\Scripts\FPS Scripts\IDamageable.cs" />
     <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\ExtraLinks.cs" />

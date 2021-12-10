@@ -1215,7 +1215,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1171306786}
   - component: {fileID: 1171306789}
-  - component: {fileID: 1171306788}
   - component: {fileID: 1171306787}
   m_Layer: 0
   m_Name: Zombie Frenzy Title
@@ -1335,14 +1334,6 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
---- !u!222 &1171306788
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1171306785}
-  m_CullTransparentMesh: 0
 --- !u!23 &1171306789
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3096,18 +3087,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &342317692718864162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 383894193787682700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &342318707941416590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9631,18 +9610,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &342758894265333936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 383277362384221836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &342764326335426806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22510,7 +22477,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 385220707145926554}
-  - component: {fileID: 342758894265333936}
   m_Layer: 5
   m_Name: POST
   m_TagString: Untagged
@@ -22960,7 +22926,6 @@ GameObject:
   m_Component:
   - component: {fileID: 453679578650416596}
   - component: {fileID: 361924200334552364}
-  - component: {fileID: 451092869171598102}
   - component: {fileID: 342905849710738518}
   - component: {fileID: 383338202926698097}
   m_Layer: 0
@@ -26003,7 +25968,6 @@ GameObject:
   - component: {fileID: 321499216374806634}
   - component: {fileID: 289810285909247478}
   - component: {fileID: 342892570278872938}
-  - component: {fileID: 342317692718864162}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -30386,14 +30350,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 383168864079299206}
-  m_CullTransparentMesh: 0
---- !u!222 &451092869171598102
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 383338202926698098}
   m_CullTransparentMesh: 0
 --- !u!222 &451093681004176672
 CanvasRenderer:
@@ -35419,14 +35375,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 77.3}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &2728403666521715222
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2796245185170861938}
-  m_CullTransparentMesh: 0
 --- !u!222 &2728913648960575808
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -35537,7 +35485,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2725923600925701332}
   - component: {fileID: 2781665575066651692}
-  - component: {fileID: 2728403666521715222}
   - component: {fileID: 2836591786550386006}
   - component: {fileID: 2796245185170861937}
   m_Layer: 0
@@ -37759,14 +37706,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8245325888603222495}
   m_CullTransparentMesh: 0
---- !u!222 &8178085520019787249
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8245277214391439509}
-  m_CullTransparentMesh: 0
 --- !u!23 &8230662316826964939
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -37818,7 +37757,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8176061699953675059}
   - component: {fileID: 8230662316826964939}
-  - component: {fileID: 8178085520019787249}
   - component: {fileID: 8358330086265299633}
   - component: {fileID: 8245277214391439510}
   m_Layer: 0

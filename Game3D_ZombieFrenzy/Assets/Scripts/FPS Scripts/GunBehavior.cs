@@ -10,7 +10,6 @@ public class GunBehavior : MonoBehaviour
     [SerializeField] float damage = 1f;
     [SerializeField] float range = 100f;
     [SerializeField] float impactForce = 60f;
-    [Tooltip("Number of bullet fired per second")] [SerializeField] float fireRate = 3f;
     [SerializeField] int maxAmmo = 7;
 
     [Header("FPS Cam")]
